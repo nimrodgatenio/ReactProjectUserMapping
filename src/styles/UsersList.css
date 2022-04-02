@@ -1,0 +1,99 @@
+/* Styles for UsersList */
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main h1 {
+  font-size: 2.2rem;
+  color: rgb(247, 159, 65);
+  padding: 25px;
+}
+
+.searchAndFilterContainer {
+  margin: 10px;
+}
+.searchAndFilterContainer .searchAndFilterInput.searchAndFilterInput-rmv {
+  width: 2rem;
+  cursor: pointer;
+  border-radius: 0 6px 6px 0;
+  transform: translateX(-2px);
+}
+.searchAndFilterContainer .searchAndFilterInput:focus {
+  outline: none;
+}
+.searchAndFilterContainer .searchAndFilterInput {
+  width: 200px;
+  height: 30px;
+  font-size: 1rem;
+  border: 1px solid #333;
+  background-color: white;
+  text-align: center;
+  border-radius: 6px 0 0 6px;
+}
+
+.tableContainer {
+  border-collapse: collapse;
+  font-size: 1.2rem;
+  box-shadow: 0px 4px 26px 5px rgba(6, 0, 72, 0.25);
+  width: 78vw;
+  margin-top: 0.5rem;
+}
+.tableContainer .tableHeader {
+  background-color: #f55;
+  color: white;
+}
+.tableContainer th {
+  padding: 10px 20px;
+}
+.tableContainer td {
+  padding: 10px 20px;
+  text-align: center;
+}
+.tableContainer tr {
+  /* margin: 0.2rem 0; */
+  border-bottom: 1px solid #333;
+}
+
+.tableContainer tr td img {
+  height: 85%;
+  border-radius: 50%;
+}
+
+/* responsive */
+
+@media screen and (max-width: 750px) {
+  .tableContainer {
+    transform: scale(0.8);
+    margin-top: -4.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tableContainer {
+    transform: scale(0.7);
+    margin-top: -7rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .main h1 {
+    font-size: 1.8rem;
+  }
+  .tableContainer {
+    transform: scale(0.6);
+    margin-top: -9.5rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .main h1 {
+    font-size: 1.8rem;
+  }
+  .tableContainer {
+    transform: scale(0.55);
+    margin-top: -10rem;
+  }
+}

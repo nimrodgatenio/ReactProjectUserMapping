@@ -1,0 +1,172 @@
+/* Styles for UserDetails */
+
+.pageContainer h1 {
+  /* color: rgb(89, 21, 98); */
+  color: #444;
+}
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  padding-top: 1rem;
+}
+.pageContainer .backLink {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #f43;
+}
+
+.pageContainer .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+.pageContainer .wrapper .primary,
+.pageContainer .wrapper .secondary {
+  height: 100%;
+}
+.pageContainer .wrapper .primary .userDetailsContainer:hover {
+  transform: scale(1.02);
+}
+.pageContainer .wrapper .primary .userDetailsContainer {
+  cursor: pointer;
+  transition: all .2s ease;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 2px solid #222;
+  background-color: #811affc2;
+  width: 20rem;
+  height: 100%;
+  font-size: 1.3rem;
+  border-radius: 2%;
+  border-radius: 12px 0 12px 0;
+}
+.pageContainer .wrapper .primary .userDetailsContainer a,
+.pageContainer .wrapper .primary .userDetailsContainer p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.pageContainer .wrapper .primary .userDetailsContainer .userDetailsHeader {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.pageContainer .wrapper .primary .userDetailsContainer .userDetailsHeader h2 {
+  margin-top: 1rem;
+  color: #333;
+  font-size: 1.4rem;
+}
+.pageContainer .wrapper .primary .userDetailsContainer .userDetailsHeader img {
+  border-radius: 50%;
+  width: 120px;
+  width: 70%;
+  border: 3px solid #555;
+  box-shadow: 0px 4px 26px 5px rgba(6, 0, 72, 0.25);
+}
+.pageContainer .wrapper .primary .userDetailsContainer .userDetailsHeader a {
+  text-decoration: none;
+}
+.pageContainer .wrapper .secondary iframe {
+  width: 45rem;
+  height: 100%;
+  margin-left: 20px;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1111px) {
+  .pageContainer .wrapper .secondary iframe {
+    width: 35rem;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .pageContainer .wrapper {
+    height: 60vh;
+  }
+  .pageContainer .wrapper .primary .userDetailsContainer {
+    width: 18rem;
+    font-size: 1rem;
+  }
+  .pageContainer .wrapper .secondary iframe {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .pageContainer {
+    justify-content: flex-start;
+    /* background-color: red; */
+    /* padding: 1rem; */
+  }
+  .pageContainer .wrapper {
+    flex-direction: column;
+    width: 90vw;
+    height: max-content;
+    padding-top: 2rem;
+    /* background-color: lightblue; */
+    /* margin: 2rem 0; */
+  }
+  .pageContainer .wrapper .primary,
+  .pageContainer .wrapper .secondary {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .pageContainer .wrapper .primary .userDetailsContainer {
+    width: max-content;
+    font-size: 1rem;
+    flex-direction: row;
+  }
+  .pageContainer .wrapper .primary .userDetailsContainer .userDetailsHeader {
+    margin-right: 2rem;
+  }
+  .pageContainer .wrapper .secondary iframe {
+    width: 75%;
+    height: 18rem;
+  }
+  .pageContainer .backLink {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pageContainer {
+    justify-content: flex-start;
+    /* padding: 1rem; */
+  }
+  .pageContainer .wrapper {
+    flex-direction: column;
+    width: 90vw;
+    height: max-content;
+    padding-top: 2rem;
+    /* background-color: lightblue; */
+    /* margin: 2rem 0; */
+  }
+  .pageContainer .wrapper .primary,
+  .pageContainer .wrapper .secondary {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .pageContainer .wrapper .primary .userDetailsContainer {
+    width: max-content;
+    font-size: 1rem;
+    flex-direction: column;
+  }
+  .pageContainer .wrapper .primary .userDetailsContainer .userDetailsHeader {
+    margin-right: 2rem;
+  }
+  .pageContainer .wrapper .secondary iframe {
+    width: 75%;
+    height: 18rem;
+  }
+}

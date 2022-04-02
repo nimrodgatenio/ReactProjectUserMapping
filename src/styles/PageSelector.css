@@ -1,0 +1,13 @@
+/* Styles for PageSelector */
+
+.page {
+  text-decoration: none;
+  color: #c9004d;
+  font-size: 1.5rem;
+  margin: 20px;
+  font-weight: 500;
+}
+
+.pageSelector {
+  margin: 25px;
+}
